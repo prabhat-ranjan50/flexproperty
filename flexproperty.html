@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Flex Property</title>
+   <style type="text/css">
+     body { 
+  height: 100vh;
+  text-align: center;
+  margin-top: 150px;
+  background-color: hsl(300, 100%, 25%);
+  background-color: lightblue;
+   }
+   body h1{
+      background: linear-gradient(45deg,orangered,deeppink);
+      padding: 10px;
+      width: 150px;
+      margin-left: 550px;
+      border-radius: 10px;
+      box-shadow: 0 10px 10px black;
+      transform: translateX(-500px);
+         transition: all 5.0s;
+   }
+   body h1:hover{
+      background: linear-gradient(45deg,lightpink,lightcoral);
+      cursor: pointer;
+      transform: translateX(500px);
+   }
+   .column{
+      background: linear-gradient(90deg,deeppink,teal);
+      border-radius: 10px;
+      cursor: pointer;
+   }
+   .column:hover{
+      background: linear-gradient(60deg,lightskyblue,coral);
+   }
+
+      .flex {
+  margin: 0;
+  display: flex;
+  border-top: 10px solid lavenderblush;
+  border-bottom: 10px solid limegreen;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.flex div:first-child {
+  flex: 1;
+  background-size: cover ;
+  background-position: center;
+}
+.flex div:last-child {
+  margin: 2rem;
+  flex: 2;
+}
+.flex h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 400;
+}
+.flex p {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: cursive;
+}
+.flex p:last-of-type {
+  margin-bottom: 0;
+}
+.flex:first-of-type div:first-child {
+  background-image: url("https://github.com/AdityaRaj14072002/new1/blob/main/lion.jpg?raw=true") ;
+  background-size: cover;
+}
+.flex img{
+   display: none;
+}
+h2{
+  text-decoration: underline;
+}
+   </style>
+
+
+</head>
+<body>
+   <h1>Flex</h1>
+   <div class="column">
+    <figure class="flex">
+          <div><img src="https://github.com/AdityaRaj14072002/new1/blob/main/lion.jpg?raw=true" class="center" alt="LION"></div>
+          <div>
+            <h2><b>EARTH: OUR PLANET</b></h2>
+            <p> Earth is the planet where we live. It is the third planet among the eight planets of Sun and fifth largest among them. It is the only planet where human and other species can live. Essential substances like air, water and land supports life on earth.
+
+                Earth is made of rocks and came into existence billions of year ago. However, 70% of the surface of the earth is covered by water which we see as the ocean, sea, and rivers and remaining 30% is covered by land.
+                
+                Like other planets earth also moves around the Sun in a fixed way called orbit. It takes 364 days and 6 hours to complete a round around the Sun. Which we count as a year.
+                
+                
+                Along with the movement, Earth also rotates on its axis from east to west and complete a rotation in 24 hours which we call a solar day. In that rotation, some of the places on earth face sun and other places get hide from the sun alternatively, which we experienced as day and night.
+            
+</p>
+          </div>
+    </figure>
+
+</div>
+
+   
+</body>
+</html>
